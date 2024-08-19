@@ -574,20 +574,28 @@ html {
   position: relative;
 }
 
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -602,6 +610,10 @@ html {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -614,12 +626,20 @@ html {
   gap: 1rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.border {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .bg-primary-blue {
@@ -627,37 +647,26 @@ html {
   background-color: hsl(219 85% 26% / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-secundary-lgblue3 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(205 33% 90% / var(--tw-bg-opacity));
-}
-
-.bg-secundary-lgblue2 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(211 68% 94% / var(--tw-bg-opacity));
-}
-
 .bg-secundary-lgblue1 {
   --tw-bg-opacity: 1;
   background-color: hsl(210 60% 98% / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .p-3 {
   padding: 0.75rem;
 }
 
-.px-2\.5 {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3\.5 {
+  padding: 0.875rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4 {
@@ -670,23 +679,17 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-\[500\] {
@@ -697,12 +700,13 @@ html {
   font-weight: 800;
 }
 
-.leading-3 {
-  line-height: .75rem;
-}
-
 .leading-5 {
   line-height: 1.25rem;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-secundary-dgblue {
@@ -720,9 +724,9 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
+.text-primary-blue {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: hsl(219 85% 26% / var(--tw-text-opacity));
 }
 
 /* Custom styles */
@@ -734,53 +738,19 @@ html {
   position: absolute;
 }
 
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.after\:top-\[50\%\]::after {
-  content: var(--tw-content);
-  top: 50%;
-}
-
-.after\:top-\[20\%\]::after {
-  content: var(--tw-content);
-  top: 20%;
-}
-
-.after\:top-\[25\%\]::after {
-  content: var(--tw-content);
-  top: 25%;
-}
-
 .after\:top-\[30\%\]::after {
   content: var(--tw-content);
   top: 30%;
 }
 
-.after\:size-8::after {
+.after\:top-\[35\%\]::after {
   content: var(--tw-content);
-  width: 2rem;
-  height: 2rem;
+  top: 35%;
 }
 
-.after\:size-4::after {
+.after\:top-\[40\%\]::after {
   content: var(--tw-content);
-  width: 1rem;
-  height: 1rem;
-}
-
-.after\:size-3::after {
-  content: var(--tw-content);
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.after\:size-2::after {
-  content: var(--tw-content);
-  width: 0.5rem;
-  height: 0.5rem;
+  top: 40%;
 }
 
 .after\:h-2::after {
@@ -798,10 +768,9 @@ html {
   border-radius: 50%;
 }
 
-.after\:bg-red-600::after {
+.after\:rounded-\[35\%\]::after {
   content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  border-radius: 35%;
 }
 
 .after\:bg-primary-red::after {
@@ -810,17 +779,7 @@ html {
   background-color: hsl(1 90% 64% / var(--tw-bg-opacity));
 }
 
-.after\:content-\[\'\1F354\'\]::after {
-  --tw-content: '🍔';
-  content: var(--tw-content);
-}
-
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'Hola\'\]::after {
-  --tw-content: 'Hola';
   content: var(--tw-content);
 }
