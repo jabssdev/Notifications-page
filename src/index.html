@@ -12,64 +12,67 @@
 			<header class="flex justify-between pb-4 items-center">
 				<div class="flex items-center">
 					<h1 class="text-xl font-[800] mr-3">Notifications</h1>
-					<span class="bg-primary-blue text-white px-3 rounded-md font-[500]">3</span>
+					<span id="amount-notifications" class="bg-primary-blue text-white px-3 rounded-md font-[500]">3</span>
 				</div>
-				<button class="text-secundary-dgblue font-[500] hover:text-primary-blue">Mark all as read</button>
+				<button id="btn-mark-all" class="text-secundary-dgblue font-[500] hover:text-primary-blue">Mark all as read</button>
 			</header>
 			<section>
-				<article class="flex justify-start gap-4 p-3 mb-3 bg-secundary-lgblue1 rounded-lg">
+				<article class="flex justify-start gap-4 p-3 mb-3 notification-active cursor-pointer">
 					<img class="h-10" src="./assets/images/avatar-mark-webber.webp" alt="Perfil de Mark Webber" />
 					<div>
 						<p class="text-secundary-dgblue font-[500] leading-5">
 							<span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Mark Webber</span> reacted to your recent post
-							<strong class="hover:text-primary-blue cursor-pointer">My first tournament today!</strong
-							><span class="ml-2 relative after:content-[''] after:absolute after:top-[40%] after:h-2 after:w-2 after:bg-primary-red after:rounded-[50%]"></span>
+							<strong class="hover:text-primary-blue cursor-pointer">My first tournament today!</strong><span class="not-read"></span>
 						</p>
 						<span class="text-secundary-gblue">1m ago</span>
 					</div>
 				</article>
-				<article class="flex justify-start gap-4 p-3 mb-4 bg-secundary-lgblue1 rounded-lg">
+				<article class="flex justify-start gap-4 p-3 mb-4 notification-active cursor-pointer">
 					<img class="h-10" src="./assets/images/avatar-angela-gray.webp" alt="Perfil de Angela Gray" />
 					<div>
 						<p class="text-secundary-dgblue font-[500] leading-5">
 							<span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Angela Gray</span> followed you
-							<span class="ml-2 relative after:content-[''] after:absolute after:top-[40%] after:h-2 after:w-2 after:bg-primary-red after:rounded-[50%]"></span>
+							<span class="not-read"></span>
 						</p>
 						<span class="text-secundary-gblue">5m ago</span>
 					</div>
 				</article>
-				<article class="flex justify-start gap-4 p-3 mb-3 bg-secundary-lgblue1 rounded-lg">
+				<article class="flex justify-start gap-4 p-3 mb-3 notification-active cursor-pointer">
 					<img class="h-10" src="./assets/images//avatar-jacob-thompson.webp" alt="Perfil de Jacob Thompson" />
 					<div>
 						<p class="text-secundary-dgblue font-[500] leading-5">
 							<span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Jacob Thompson</span> has joined your group
-							<strong class="hover:text-primary-blue cursor-pointer">Chess Club</strong
-							><span class="ml-2 relative after:content-[''] after:absolute after:top-[40%] after:h-2 after:w-2 after:bg-primary-red after:rounded-[50%]"></span>
+							<strong class="hover:text-primary-blue cursor-pointer">Chess Club</strong><span class="not-read"></span>
 						</p>
 						<span class="text-secundary-gblue">1 day ago</span>
 					</div>
 				</article>
-				<article class="flex justify-start gap-4 p-3 mb-3">
+				<article class="flex justify-start gap-4 p-3 mb-3 cursor-pointer">
 					<img class="h-10" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Perfil de Jacob Thompson" />
 					<div>
-						<p class="text-secundary-dgblue font-[500] leading-5"><span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Rizky Hasanuddin</span> sent you a private message</p>
+						<p class="text-secundary-dgblue font-[500] leading-5">
+							<span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Rizky Hasanuddin</span> sent you a private message
+						</p>
 						<span class="text-secundary-gblue">5 days ago</span>
 						<p class="text-secundary-dgblue font-[500] leading-5 mt-4 border border-solid p-3.5 rounded-md hover:bg-secundary-lgblue1 cursor-pointer">
-							Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+							Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my
+							game.
 						</p>
 					</div>
 				</article>
-				<article class="flex justify-between mb-3 p-3">
+				<article class="flex justify-between mb-3 p-3 cursor-pointer">
 					<div class="flex justify-start gap-4">
 						<img class="h-10" src="./assets/images/avatar-kimberly-smith.webp" alt="Perfil de Kimberly Smith" />
 						<div>
-							<p class="text-secundary-dgblue font-[500] leading-5"><span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Kimberly Smith</span> commented on your picture</p>
+							<p class="text-secundary-dgblue font-[500] leading-5">
+								<span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Kimberly Smith</span> commented on your picture
+							</p>
 							<span class="text-secundary-gblue">1 week ago</span>
 						</div>
 					</div>
 					<img class="h-10 hover:scale-105 cursor-pointer" src="./assets/images/image-chess.webp" alt="Foto de mujer jugando ajedrez" />
 				</article>
-				<article class="flex justify-start gap-4 p-3 mb-3">
+				<article class="flex justify-start gap-4 p-3 mb-3 cursor-pointer">
 					<img class="h-10" src="./assets/images/avatar-nathan-peterson.webp" alt="Perfil de Nathan Peterson" />
 					<div>
 						<p class="text-secundary-dgblue font-[500] leading-5">
@@ -79,11 +82,12 @@
 						<span class="text-secundary-gblue">2 weeks ago</span>
 					</div>
 				</article>
-				<article class="flex justify-start gap-4 p-3 mb-3">
+				<article class="flex justify-start gap-4 p-3 mb-3 cursor-pointer">
 					<img class="h-10" src="./assets/images/avatar-anna-kim.webp" alt="Perfil de Anna Kim" />
 					<div>
 						<p class="text-secundary-dgblue font-[500] leading-5">
-							<span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Anna Kim</span> left the group <strong class="hover:text-primary-blue cursor-pointer">Chess Club</strong>
+							<span class="font-[800] text-black hover:text-primary-blue cursor-pointer">Anna Kim</span> left the group
+							<strong class="hover:text-primary-blue cursor-pointer">Chess Club</strong>
 						</p>
 						<span class="text-secundary-gblue">2 weeks ago</span>
 					</div>
@@ -91,9 +95,11 @@
 			</section>
 			<hr class="mb-4" />
 			<div class="attribution text-center text-secundary-dgblue font-[500] leading-5 mb-2">
-				Challenge by <a class="text-primary-blue font-[800]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br />
+				Challenge by <a class="text-primary-blue font-[800]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				<br />
 				Coded by <a class="text-primary-blue font-[800]" href="https://github.com/jabssdev" target="_blank">JabssDev</a>.
 			</div>
 		</div>
+		<script src="./main.js"></script>
 	</body>
 </html>

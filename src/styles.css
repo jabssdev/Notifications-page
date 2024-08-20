@@ -19,3 +19,13 @@
 		@apply font-sans;
 	}
 }
+
+/* Notifications */
+
+.notification-active {
+	@apply bg-secundary-lgblue1 rounded-lg;
+}
+
+.not-read {
+	@apply ml-2 relative after:content-[''] after:absolute after:top-[40%] after:h-2 after:w-2 after:bg-primary-red after:rounded-[50%];
+}
