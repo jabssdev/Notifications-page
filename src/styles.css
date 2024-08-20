@@ -19,6 +19,7 @@
 		@apply font-sans;
 	}
 }
+npx tailwindcss -o build.css --minify
 
 /* Notifications */
 
