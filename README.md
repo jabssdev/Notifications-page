@@ -8,7 +8,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -33,10 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [Solution](https://github.com/jabssdev/Notifications-page)
+- Live Site URL: [Live Site](https://jabssdev.github.io/Notifications-page)
 
 ### Built with
 
